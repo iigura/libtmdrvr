@@ -21,7 +21,10 @@ For example:
 See Makefile for details.
 
 ## Install
-There is no installer in particular. It is only necessary to expand it to an appropriate location so that the header file and the library file can be referenced by the compiler and the linker.
+There is no installer in particular.
+It is only necessary to expand it to an appropriate location so that the header file and the library file can be referenced by the compiler and the linker.
+
+Run 'make' to create the library libtmdrvr.a.
 
 ## Files
 tmDriver.h  --- the header file for the C programming language.
