@@ -35,11 +35,13 @@ Note: All functions provided by the library have the prefix tmDrvr*.
 
 ### Initialize and Dispose the driver
 Initialize the mouse driver.
+
     bool tmDrvrInit(int inMinX,int inMinY,int inMaxX,int inMaxY);
     The mouse pointer movement range (X, Y) is inMinX <= X <inMaxX and inMinY <= Y <inMaxY.    
     Returns true if initialization was successful, otherwise returns false.
 
 Dispose the mouse driver.
+
     bool tmDrvrDispose();
     Returns true if the driver is successfully destroyed, false otherwise.
 
@@ -55,6 +57,7 @@ Note: The coordinate system used by the mouse cursor is the origin (X, Y) = (0,0
     Returns the X coordinate of the current mouse cursor.
 
 The next function returns the X and Y coordinates of the mouse cursor at the same time.
+
     void tmDrvrGetXY(int *outMouseX,int *outMouseY);
     The area pointed to by outMouseX stores the X coordinate of the current mouse cursor. The Y coordinate is stored in the area pointed to by outMouseY.
     
