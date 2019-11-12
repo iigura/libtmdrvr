@@ -16,7 +16,7 @@ For details, refer to the sample program test.c included in the package.
 Include the tmDriver.h in your C program and specify libtmdrvr.a and the pthread library when linking.
 For example:
 
-    gcc-std=gnu99 -Wextra -Wall -pthread test.c -L. -ltmdrvr -o test
+    gcc -std=gnu99 -Wextra -Wall -pthread test.c -L. -ltmdrvr -o test
 
 See Makefile for details.
 
